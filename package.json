@@ -1,0 +1,17 @@
+{
+  "name": "tictactoeeee",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "ws": "^8.19.0"
+  }
+}
