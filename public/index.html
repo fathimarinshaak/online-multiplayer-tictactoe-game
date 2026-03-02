@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Online Tic Tac Toe</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe Pro</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Online Tic-Tac-Toe</h1>
-  <p id="status">Connecting...</p>
 
-  <div id="board"></div>
+  <h1>Tic-Tac-Toe</h1>
+  <div id="status">Connecting...</div>
+
+  <div id="lobbyModal" class="modal">
+    <div class="modal-content">
+      <h2>Join a Game</h2>
+      <input id="nameInput" placeholder="Enter your name" />
+      <div class="create-section">
+        <input id="roomInput" placeholder="Room name (optional)" />
+        <button onclick="createRoom()">Create New Room</button>
+      </div>
+      <h3 style="margin-top:25px; font-size: 0.9rem; color: #94a3b8;">Active Rooms</h3>
+      <ul id="roomList"></ul>
+    </div>
+  </div>
+
+ <div id="board" style="display:none"></div>
+<button id="resetBtn" style="display:none" onclick="requestReset()">Play Again</button>
+<button id="leaveBtn" style="display:none" onclick="leaveRoom()">Leave Room</button>
 
   <script src="client.js"></script>
 </body>
